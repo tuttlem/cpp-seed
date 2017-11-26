@@ -1,8 +1,16 @@
-*nix style console application template
-===========================================================================
+*nix style daemon template
+===========================================================
 
-This project serves as an application base for when a console tool is
-required for development in a hurry, but no one has time to go through and
-implement the simple things properly.
+This project sets up the basic infrastructure to write a
+daemon on a unix-style system. All of the preparation work
+is contained in the template including setting up syslog.
 
-This template is an empty application.
+References to note:
+
+Linux Daemon Writing HOWTO
+http://www.netzmafia.de/skripten/unix/linux-daemon-howto.html
+
+Unix Daemon Server Programming
+http://www.enderunix.org/docs/eng/daemon.php
+
+

@@ -5,7 +5,7 @@ CC := clang++
 SRCDIR := src
 BUILDDIR := build
 CFLAGS := -g -Wall
-TARGET := bin/program
+TARGET := bin/daemond
 
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
