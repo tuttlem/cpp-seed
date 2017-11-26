@@ -2,11 +2,17 @@
 #
 
 CC := clang++
-PKGS := ...
+PKGS := sdl
 SRCDIR := src
 BUILDDIR := build
 CFLAGS := -g -Wall `pkg-config --cflags $(PKGS)`
-LIBS := `pkg-config --libs $(PKGS)`
+
+ifeq ($(OS),Linux)
+   LFLAGS := `sdl-config --libs` `pkg-config --libs $(PKGS) gl`
+else ifeq ($(OS),Darwin)
+   LFLAGS := -framework OpenGL `pkg-config --libs $(PKGS)`
+endif
+
 TARGET := bin/program
 
 SRCEXT = cpp
