@@ -1,8 +1,6 @@
-*nix style console application template
+GLUT application with basic camera
 ===========================================================================
 
-This project serves as an application base for when a console tool is
-required for development in a hurry, but no one has time to go through and
-implement the simple things properly.
+This project holds boilerplate code for a glut application with some simple
+camera support.
 
-This template is an empty application.
